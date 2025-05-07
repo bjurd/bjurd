@@ -1,110 +1,3 @@
-@keyframes LightsMove
-{
-	0%
-	{
-		transform: scaleY(1) rotate(calc(-5deg + var(--rotation-offset)));
-		opacity: 0.3;
-	}
-
-	25%
-	{
-		transform: scaleY(1)rotate(calc(5deg + var(--rotation-offset)));
-		opacity: 1;
-	}
-
-	50%
-	{
-		transform: scaleY(1) rotate(calc(-5deg + var(--rotation-offset)));
-		opacity: 1;
-	}
-
-	100%
-	{
-		transform: scaleY(1) rotate(calc(5deg + var(--rotation-offset)));
-		opacity: 1;
-	}
-}
-
-@keyframes LightsColor
-{
-	0%
-	{
-		border-bottom-color: rgba(255, 0, 0, 1);
-	}
-
-	25%
-	{
-		border-bottom-color: rgba(0, 255, 0, 1);
-	}
-
-	50%
-	{
-		border-bottom-color: rgba(0, 0, 255, 1);
-	}
-
-	75%
-	{
-		border-bottom-color: rgba(255, 255, 0, 1);
-	}
-
-	100%
-	{
-		border-bottom-color: rgba(255, 0, 0, 1);
-	}
-}
-
-@keyframes GridMove
-{
-	0%
-	{
-		transform: translate(0, 0);
-	}
-
-	100%
-	{
-		transform: translate(-3em, -3em);
-	}
-}
-
-@keyframes NamePulse
-{
-	0%
-	{
-		text-shadow:
-			0 0 5px #fff,
-			0 0 10px #fff,
-			0 0 20px #00ff22,
-			0 0 30px #00ffb3,
-			0 0 40px #00ff4c,
-			0 0 50px #2bff00,
-			0 0 60px #00ff55;
-	}
-
-	50%
-	{
-		text-shadow:
-			0 0 10px #fff,
-			0 0 20px #ff00ff,
-			0 0 30px #ff00ff,
-			0 0 40px #ff00ff,
-			0 0 50px #ff00ff,
-			0 0 60px #ff00ff,
-			0 0 70px #ff00ff;
-	}
-
-	100%
-	{
-		text-shadow:
-			0 0 5px #fff,
-			0 0 10px #fff,
-			0 0 20px #ff5e00,
-			0 0 30px #ff5e00,
-			0 0 40px #ff5e00,
-			0 0 50px #ff5e00,
-			0 0 60px #ff5e00;
-	}
-}
-
 .spotlight
 {
 	position: absolute;
@@ -171,6 +64,7 @@
 	min-height: 100vh;
 
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -181,9 +75,12 @@
 
 #dancers
 {
+	width: 100%;
+
 	flex: 1;
 
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 }
