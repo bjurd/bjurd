@@ -3,6 +3,9 @@
 	box-sizing: border-box;
 
 	color-scheme: dark;
+
+	font-family: "Roboto Mono", monospace ;
+  	font-optical-sizing: auto;
 }
 
 html, body
