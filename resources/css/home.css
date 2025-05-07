@@ -1,0 +1,96 @@
+@keyframes LightsMove
+{
+	0%
+	{
+		transform: scaleY(1) rotate(calc(-5deg + var(--rotation-offset)));
+		opacity: 0.3;
+	}
+
+	25%
+	{
+		transform: scaleY(1)rotate(calc(5deg + var(--rotation-offset)));
+		opacity: 1;
+	}
+
+	50%
+	{
+		transform: scaleY(1) rotate(calc(-5deg + var(--rotation-offset)));
+		opacity: 1;
+	}
+
+	100%
+	{
+		transform: scaleY(1) rotate(calc(5deg + var(--rotation-offset)));
+		opacity: 1;
+	}
+}
+
+@keyframes LightsColor
+{
+	0%
+	{
+		border-bottom-color: rgba(255, 0, 0, 1);
+	}
+
+	25%
+	{
+		border-bottom-color: rgba(0, 255, 0, 1);
+	}
+
+	50%
+	{
+		border-bottom-color: rgba(0, 0, 255, 1);
+	}
+
+	75%
+	{
+		border-bottom-color: rgba(255, 255, 0, 1);
+	}
+
+	100%
+	{
+		border-bottom-color: rgba(255, 0, 0, 1);
+	}
+}
+
+.spotlight
+{
+	position: absolute;
+	top: 0;
+
+	width: 0;
+	height: 0;
+
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-bottom: 400px solid rgba(255, 0, 0, 1);
+
+	filter: blur(8px) hue-rotate(var(--hue-offset));
+
+	animation-name: LightsMove, LightsColor;
+	animation-duration: 1s, 6s;
+	animation-iteration-count: infinite, infinite;
+	animation-timing-function: linear, linear;
+	animation-direction: alternate, alternate;
+
+	transform-origin: top center;
+	transform: rotate(var(--rotation-offset));
+}
+
+.party
+{
+	height: 100%;
+
+	background: radial-gradient(circle at center, #111 0%, #000 100%);
+
+	opacity: 0.3;
+}
+
+#head
+{
+	min-height: 75vh;
+
+	background-color: black;
+
+	overflow: clip;
+}
