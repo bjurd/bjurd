@@ -98,8 +98,6 @@
 	text-align: center;
 
 	color: white;
-	font-family: "Roboto Mono", monospace ;
-  	font-optical-sizing: auto;
 
 	animation: NamePulse 2s infinite;
 
@@ -131,4 +129,37 @@
 	z-index: -1;
 
 	pointer-events: none;
+}
+
+#head > #continue
+{
+	height: 2rem;
+
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+
+	color: black;
+	background-color: white;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+
+	border-radius: 1em;
+
+	font-size: 0.8rem;
+
+	cursor: pointer;
+
+	z-index: 10;
+}
+
+#head > #continue > ion-icon
+{
+	font-size: 1.25rem;
 }

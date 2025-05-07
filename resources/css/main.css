@@ -6,6 +6,8 @@
 
 	font-family: "Roboto Mono", monospace ;
   	font-optical-sizing: auto;
+
+	  scroll-behavior: smooth;
 }
 
 html, body
@@ -21,4 +23,11 @@ p, h1, h2, h3, h4
 {
 	padding: 0;
 	margin: 0;
+}
+
+a
+{
+	text-decoration: none;
+
+	color: inherit;
 }
