@@ -85,6 +85,18 @@
 	justify-content: space-around;
 }
 
+.catcer
+{
+	width: 10em;
+	height: auto;
+}
+
+.dogcer
+{
+	width: 15em;
+	height: auto;
+}
+
 #name
 {
 	position: absolute;
