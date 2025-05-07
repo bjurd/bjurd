@@ -31,3 +31,10 @@ a
 
 	color: inherit;
 }
+
+.body_container
+{
+	margin-left: 8rem;
+	margin-right: 8rem;
+	margin-top: 6rem;
+}
