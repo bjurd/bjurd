@@ -11,6 +11,19 @@
 	}
 }
 
+@keyframes HahaFallTheOtherWay
+{
+	0%
+	{
+		transform: translateY(-100px) rotate(0deg);
+	}
+
+	100%
+	{
+		transform: translateY(100vh) rotate(-360deg);
+	}
+}
+
 #haharain
 {
 	position: fixed;
@@ -33,7 +46,6 @@
 {
 	position: absolute;
 
-	animation-name: HahaFall;
 	animation-timing-function: linear;
 	animation-iteration-count: 1;
 

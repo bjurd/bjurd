@@ -13,9 +13,11 @@ const SetupHaha = () =>
 		const Left = Math.random() * 100;
 		const Speed = 3 + Math.random() * 5;
 		const Rotation = Math.random() * 360;
+		const RotationStyle = Math.random() < 0.5 ? "HahaFall" : "HahaFallTheOtherWay";
 
 		HahaBall.style.width = Size + "px";
 		HahaBall.style.left = Left + "vw";
+		HahaBall.style.animationName = RotationStyle;
 		HahaBall.style.animationDuration = Speed + "s";
 		HahaBall.style.transform = `rotate(${Rotation}deg)`;
 
