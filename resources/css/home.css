@@ -66,6 +66,45 @@
 	}
 }
 
+@keyframes NamePulse
+{
+	0%
+	{
+		text-shadow:
+			0 0 5px #fff,
+			0 0 10px #fff,
+			0 0 20px #00ff22,
+			0 0 30px #00ffb3,
+			0 0 40px #00ff4c,
+			0 0 50px #2bff00,
+			0 0 60px #00ff55;
+	}
+
+	50%
+	{
+		text-shadow:
+			0 0 10px #fff,
+			0 0 20px #ff00ff,
+			0 0 30px #ff00ff,
+			0 0 40px #ff00ff,
+			0 0 50px #ff00ff,
+			0 0 60px #ff00ff,
+			0 0 70px #ff00ff;
+	}
+
+	100%
+	{
+		text-shadow:
+			0 0 5px #fff,
+			0 0 10px #fff,
+			0 0 20px #1100ff,
+			0 0 30px #2f00ff,
+			0 0 40px #2600ff,
+			0 0 50px #0400ff,
+			0 0 60px #1900ff;
+	}
+}
+
 .spotlight
 {
 	position: absolute;
@@ -127,6 +166,8 @@
 
 #head
 {
+	position: relative;
+
 	min-height: 75vh;
 
 	display: flex;
@@ -145,4 +186,45 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+
+#name
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	z-index: 10;
+
+	text-align: center;
+
+	color: white;
+	font-family: "Roboto Mono", monospace ;
+  	font-optical-sizing: auto;
+	font-size: 4rem;
+
+	animation: NamePulse 2s infinite;
+}
+
+#name::before
+{
+	content: "";
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	width: 120%;
+	height: 120%;
+
+	background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, transparent 80%);
+	filter: blur(20px);
+
+	z-index: -1;
+
+	pointer-events: none;
 }
