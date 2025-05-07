@@ -115,7 +115,7 @@
 
 	border-left: 6vw solid transparent;
 	border-right: 6vw solid transparent;
-	border-bottom: 50vh solid rgba(255, 0, 0, 1);
+	border-bottom: 60vh solid rgba(255, 0, 0, 1);
 
 	filter: blur(8px) hue-rotate(var(--hue-offset));
 
