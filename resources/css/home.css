@@ -168,7 +168,7 @@
 {
 	position: relative;
 
-	min-height: 75vh;
+	min-height: 100vh;
 
 	display: flex;
 	align-items: center;
@@ -203,9 +203,16 @@
 	color: white;
 	font-family: "Roboto Mono", monospace ;
   	font-optical-sizing: auto;
-	font-size: 4rem;
 
 	animation: NamePulse 2s infinite;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#name h1
+{
+	font-size: 4rem;
 }
 
 #name::before
