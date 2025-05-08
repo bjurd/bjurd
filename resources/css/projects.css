@@ -1,0 +1,10 @@
+.project_container
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.project_container img
+{
+	border: 1px solid white;
+}
