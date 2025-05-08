@@ -6,7 +6,7 @@ const SetupHaha = () =>
 	const CreateHaha = () =>
 	{
 		const HahaBall = document.createElement("img");
-		HahaBall.src = "/resources/img/hahaball.png";
+		HahaBall.src = "./resources/img/hahaball.png";
 		HahaBall.className = "hahaball";
 
 		const Size = 20 + Math.random() * 60;
