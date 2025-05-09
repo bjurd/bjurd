@@ -39,6 +39,24 @@ a
 	margin-top: 6rem;
 }
 
+@media (max-width: 1024px)
+{
+	.body_container
+	{
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+}
+
+@media (max-width: 768px)
+{
+	.body_container
+	{
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+}
+
 .subtext
 {
 	color: rgb(100, 100, 100);
