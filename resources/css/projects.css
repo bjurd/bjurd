@@ -41,3 +41,8 @@
 {
 	font-size: 1.2em;
 }
+
+.source-button:hover
+{
+	background-color: rgb(50, 55, 60);
+}

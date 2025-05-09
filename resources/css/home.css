@@ -175,3 +175,8 @@
 {
 	font-size: 1.25rem;
 }
+
+#head > #continue:hover
+{
+	background-color: rgb(200, 200, 200);
+}
