@@ -32,6 +32,11 @@ a
 	color: inherit;
 }
 
+a.colored
+{
+	color: rgb(0, 150, 255);
+}
+
 .body_container
 {
 	margin-left: 8rem;
