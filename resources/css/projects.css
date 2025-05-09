@@ -2,6 +2,7 @@
 {
 	display: flex;
 	justify-content: space-between;
+	gap: 1rem;
 
 	margin-bottom: 2rem;
 }
@@ -9,4 +10,34 @@
 .project_container img
 {
 	border: 1px solid white;
+}
+
+.project_title
+{
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 1rem;
+}
+
+.source-button
+{
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+
+	background-color: rgb(36, 41, 46);
+	color: white;
+
+	padding: 0.25em 0.5em;;
+
+	border-radius: 0.5em;
+
+	text-decoration: none;
+	font-size: 0.75em;
+}
+
+.source-button ion-icon
+{
+	font-size: 1.2em;
 }
