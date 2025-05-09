@@ -68,39 +68,17 @@
 
 @keyframes NamePulse
 {
-	0%
+	0%, 100%
 	{
 		text-shadow:
 			0 0 5px #fff,
-			0 0 10px #fff,
-			0 0 20px #00ff22,
-			0 0 30px #00ffb3,
-			0 0 40px #00ff4c,
-			0 0 50px #2bff00,
-			0 0 60px #00ff55;
+			0 0 10px #00ff22;
 	}
 
 	50%
 	{
 		text-shadow:
-			0 0 10px #fff,
-			0 0 20px #ff00ff,
-			0 0 30px #ff00ff,
-			0 0 40px #ff00ff,
-			0 0 50px #ff00ff,
-			0 0 60px #ff00ff,
-			0 0 70px #ff00ff;
-	}
-
-	100%
-	{
-		text-shadow:
-			0 0 5px #fff,
-			0 0 10px #fff,
-			0 0 20px #ff5e00,
-			0 0 30px #ff5e00,
-			0 0 40px #ff5e00,
-			0 0 50px #ff5e00,
-			0 0 60px #ff5e00;
+			0 0 10px #ff00ff,
+			0 0 20px #ff00ff;
 	}
 }
