@@ -9,6 +9,9 @@
 
 .project_container img
 {
+	max-width: 30vw;
+	height: auto;
+
 	border: 1px solid white;
 }
 
