@@ -204,6 +204,48 @@
 					<img src="./resources/img/projects/opengl_thing.png">
 				</div>
 			</div>
+
+			<div class="project_container">
+				<div>
+					<img src="./resources/img/projects/discord_lfs.png">
+				</div>
+
+				<div>
+					<div class="project_title">
+						<h3>Discord LFS</h3>
+
+						<a href="https://github.com/bjurd/discord-lfs" class="source-button" target="_blank" rel="noopener">
+							<ion-icon name="logo-github"></ion-icon>
+							View Source Code
+						</a>
+					</div>
+
+					<p>
+						A Discord bot that allows users to upload and download large files much larger than
+						Discord supports. In theory, files are also stored more securely because of them being encoded.
+
+						With both a custom upload and download command files can be sent and received directly with the bot's filesystem.
+
+						Information about uploaded files is also stored on Discord within the message content, so virtually no disk space or
+						database space is used by the bot.
+					</p>
+
+					<br />
+
+					<p>
+						The file size limitation is bypassed by splitting files into chunks and converting each chunk into
+						a binary image, where black pixels represent 1's and white pixels represent 0's. Red pixels are used to
+						detect the end of a chunk.
+					</p>
+
+					<br />
+
+					<p>
+						<strong>Primary Language:</strong>
+						Python
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
